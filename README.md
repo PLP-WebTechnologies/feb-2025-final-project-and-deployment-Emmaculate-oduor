@@ -1,6 +1,6 @@
 # Final Project and Deployment
 
-## Deployment link https://emmaculate-oduor.github.io/final-project/
+### Deployment link https://emmaculate-oduor.github.io/final-project/
 
 ## Objectives
 Build a fully functional web application.
