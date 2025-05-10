@@ -1,5 +1,7 @@
 # Final Project and Deployment
 
+## Deployment link https://emmaculate-oduor.github.io/final-project/
+
 ## Objectives
 Build a fully functional web application.
 Apply HTML, CSS, and JavaScript concepts learned.
