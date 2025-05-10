@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hey There👋 Welcome to my blog</h1>
+            <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="user.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm a passionate fullstack developer and a Data scientist with a strong foundation in most progamming languages, frameworks and libraries. I love building secure and scalable applications with innovative solutions to real world problems and collaboration with other developers within tech industry.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
+                            <p class="tab-links"  onclick="opentab('education')"><b>Education</b></p>
+                            <p class="tab-links"  onclick="opentab('experience')"><b>Experience</b></p>
+                            <p class="tab-links"  onclick="opentab('interest')"><b>Interest</b></p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>In Web Development</span></li>
+                                <li>✅<b> Programming Languages:</b> JavaScript, Python, HTML, CSS </li>
+                                <li>✅<b> Frontend Development:</b> React, Bootstrap</li>
+                                <li>✅<b>Backend Development:</b> Node.js, Express.js, MySQL, MongoDB</li>
+                                <li>✅<b> Tools & Platforms:</b> Git, GitHub, VS Code</li>
+                                <li>✅<b>Soft Skills:</b> Problem-solving, Teamwork, Communication</li><br>
+
+                                <li><span>In Data Science</span></li>
+                                <li>✅<b> Programming:</b> Python,SQL
+                                <li>✅<b> Data Analysis:</b>Pandas, NumPy, Matplotlib
+                                <li>✅<b>Machine Learning:</b> Scikit-Learn, TensorFlow, PyTorch
+                                <li>✅<b>Soft Skills:</b>Critical Thinking, Data Storytelling
+                            </ul>
+
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2025 Feb Cohort(current)</span><br><br>Software Development scholarship Training at Power Learn Project Academy.</li>
+                                <li><span>2025(Ongoing)</span><br><br>Data Science TechBootcamp scholarship Training at TechCrush.</li>
+                                <li><span>2024-2025</span><br><br>Python and Web Development Training at Opectast Academy.</li>
+                                <li><span>2024(July-October)</span><br><br>Cyber Security TechBootcamp scholarship at Fablab Winam Institute.</li>
+                                <li><span>2024(December)</span><br><br>Ethical Hacking Essentials (EHC) at Cyber Shujaa Institute.</li>
+                                <li><span>2019-2022</span><br><br>Kenya Certificate of Secondary Education at Anyiko Mixed Secondary Schhol.</li>  
+                            </ul>
+                              <a href="Emmaculate cv.pdf" class="btn btn2" download>Download CV</a>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>In Backend Development</span><br><br>I built a RESTful API using Node.js, MySQL2, and Express for handling user loging credentials such as emails, names, passwords and the loging time.<br><br>I implemented authentication, database queries, and API endpoints for seamless data retrieval using MySQL.</li>
+                                <li><span>In Frontend Development</span><br><br>I have designed and developed a responsive portfolio using HTML,CSS,Javascript and Bootstrap with a contact form and project showcase and about section.<br><br>Integrated EJS for templating and used MySQL for backend data management.</li>
+                                
+                            </ul>
+
+                        </div>
+                        <div class="tab-contents" id="interest">
+                            <ul>
+                                <li><span>In web Development</span><br>Ever since I built my first webpage, I’ve been fascinated by how the web connects people and businesses worldwide. I enjoy turning ideas into functional and visually appealing websites using modern technologies like HTML, CSS, JavaScript,Bootstrap and frameworks like React and Node.js. My goal is to develop scalable and user-friendly applications that enhance digital experiences. I am continuously learning and experimenting with new tools to refine my skills and stay ahead in the ever-evolving world of web development. </li>
+
+                                <li><span>In Data Science</span><br>I am interested in building machine learning models using Python (Pandas, Scikit-Learn) and visualizing insights with Tableau and Power BI.</li>
+                                <li><span>In Python</span><br>I created a banking system as my first project when i started learning python and am looking forward to solving real world problems as i continue enhancing my skills in python.</li>
+                                
+                            </ul>
+
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+               <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(var tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+
+                for(var tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            
+            } 
+
+        </script>
+    <script src="script.js"></script>
+</body>
+</html>

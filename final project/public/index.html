@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <script src="/public/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Peronal blog</title>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h1>Emmaculate.</h1>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="project..html">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()" ></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+                </nav>
+                <div class="header-text">
+                    <p> This is my personal blog</p>
+                    <h1>Hi, I'm <span>Emmaculate</span><br>Oduor from Kenya</h1>
+
+                </div>
+                <div class="image">
+                    <img src="emmy.jpg" alt="My picture">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i></a>oduoremmaculate75@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+254768684014</p>
+
+                    <a href="Emmaculate cv.pdf" class="btn btn2" download>Download CV</a>
+
+                    <div class="social-icons">
+                        <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope" target="_blank" rel="noopener noreferrer"></i></a>
+                        <a href="https://www.linkedin.com/in/emmaculate-oduor-a5711b320"><i class="fa-brands fa-linkedin" target="_blank" rel="noopener noreferrer"></i></a>
+                        <a href="https://github.com/Emmaculate-oduor/"><i class="fa-brands fa-github" target="_blank" rel="noopener noreferrer" ></i></a>
+                        <a href="https://wa.me/254768684014
+                        " target="_blank" rel="noopener noreferrer" ><i class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+
+                </div>
+                <div class="contact-right">
+
+                    <form id="contactForm">
+                        <input type="text" name="Name" id="name" placeholder="Your Name" required autocomplete="Name">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required autocomplete="email">
+                        <textarea name="Message" id="message" rows="6" placeholder="Your Message" required autocomplete="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <div id="responseMessage"></div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Emmaculate Oduor.All rights reserved.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right ="0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right ="-200px";
+            }
+       </script>
+       <script src="/public/script.js"></script>
+    </body>
+</html>
